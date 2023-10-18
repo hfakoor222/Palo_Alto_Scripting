@@ -12,6 +12,7 @@ class Connection():
                 conn = input("Please enter a list of lists for  of connection parameters: device_type,  firewall IP addresses, username, pass" + "\n example:  ['paloalto_panos', '10.1.x.x', 'username', 'password']")
                 res = json.loads(conn)
                 [connection_parameters.append(i) for i in res]
+                print(connection_parameters)
             conn = params()
             res = input("is the list formatted properly:  Type Y|N")
             if res.lower() == "y":

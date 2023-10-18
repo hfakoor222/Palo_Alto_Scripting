@@ -3,6 +3,7 @@ import re
 import netmiko
 from netmiko import ConnectHandler
 from ConnectionHandler import Connection
+import time
 
 profile_list = []
 ip_address = []
@@ -18,10 +19,13 @@ while True:
         Connection.SingleConnect(connection_parameters)
         break
 for i in connection_parameters:
+    print(i)
+
     conn = netmiko.ConnectHandler(device_type=i[0], host = i[1], username = i[2], password = i[3])
     conn.config_mode()
+    time.sleep(1)
     connections.append(conn)
-    output = conn.send_command("show network profiles interface-management-profile", cmd_verify=False, expect_string="#")
+    output = conn.send_command("show network profiles interface-management-profile",  delay_factor=3) #cmd_verify = False
     print(str(i[1]) + "\n" +   str(output))
 
 print("Now we will enter permitted Ip Addresses for the interfaces")
@@ -58,8 +62,9 @@ for i in connections:
         print(profile)
         for ip in ip_update_list:
             print(ip)
-            res = i.send_command("set network profiles interface-management-profile Inside permitted-ip " + ip , cmd_verify=False)
+            res = i.send_command("set network profiles interface-management-profile Inside permitted-ip " + ip)
 
-    i.send_command("commit")
-    res = i.send_command("show network profiles interface-management-profile")
+    # i.send_command("commit")
+    result = i.send_command("show network profiles interface-management-profile")
+    print(result)
     i.disconnect()
