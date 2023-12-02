@@ -1,7 +1,9 @@
 
 **/compare_Object_ACL's**  Folder
 
-Firewall policies contain object groups, hundreds of ip addresses and ACL's, services, address objects etc.  This script compares a set of firewall policies with the same name, across many firewalls,  and return differences in services, , address objects, ACL's etc (source/destination respectively)  to a Python dictionary.
+Firewall policies contain object groups, hundreds of ip addresses and ACL's, services, address objects etc.  This script compares a set of firewall policies with the same name, across many firewalls,  and return differences in services, , address objects, ACL's etc (source/destination respectively)  to a Python dictionary.  
+
+  
 
 We use a XML API (natively built in to Panorama) call to obtain the configuration files, so no need for token authentication.  The script also returns object groups that exist in one firewall and not the other.  So if your firewalls have similar named policies with dozens of rules, this script can save time in validating the policies by hand. Video below:
 
