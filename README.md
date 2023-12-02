@@ -41,7 +41,7 @@ user batch updates interface ACL's in a customized manner, by passing in lists/n
 and white-listed ip addresses to push permitted-ips. 
 
 
-We can specify defferent interface profiles to update for different firewalls, so we have a fair bit of customization options.
+We can specify different interface profiles to update for different firewalls, so we have a fair bit of customization options.
 
 
 Will soon be adding black-list, rollback, service policy, ip blackholing, and connectivity features (tests connectivity after ACL updates by using Scapy spoofed IP headers).
