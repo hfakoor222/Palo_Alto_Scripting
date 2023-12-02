@@ -10,6 +10,11 @@ We use a XML API (natively built in to Panorama) call to obtain the configuratio
 
 https://github.com/hfakoor222/Palo_Alto_Scripting/assets/105625129/f582cc49-3e04-4e09-89b5-a31136c54e9e
 
+the code for this is found in the /compare_Object_ACL's folder
+in my repo.  
+
+  
+
 
 
 Another script:
