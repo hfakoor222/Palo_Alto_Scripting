@@ -3,7 +3,7 @@
 
 Firewall policies contain object groups, hundreds of ip addresses and ACL's, services, address objects etc.  This script compares a set of firewall policies with the same name, across many firewalls,  and return differences in services, address objects, ACL's etc (source/destination respectively)  to a Python dictionary.  
 
-For example if different firewalls have a block list of 172.168.1.0**/24** and 172.168.1.**0/25**  this will return that difference.
+For example if different firewalls have a block list of 172.168.1.0 **/24** and 172.168.1.0 **/25**  this will return that difference.
 
   
 
