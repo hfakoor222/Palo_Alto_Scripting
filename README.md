@@ -7,10 +7,16 @@ For example if different firewalls have a block list of 172.168.1.0 **/24** and 
 
   
 
-We use a XML API (natively built in to Panorama) call to obtain the configuration files, so no need for token authentication as with REST API.  The script also returns object groups that exist in one firewall and not the other.  So if your firewalls have similar named policies with dozens of rules, this script can save time in validating the policies by hand. Video below:
+We use a XML API (natively built in to Panorama) call to obtain the configuration files, so no need for token authentication as with REST API.  The script also returns object groups that exist in one firewall and not the other.  So if your firewalls have similar named policies with dozens of rules, this script can save time in validating the policies by hand. 
+
+The script uses ElementTree for nested matches - in other words it won't return differences just because they exist over everything , it returns them when they belong to the same groups within the XML tree, which is what we want, as PaloAlto has a built in XML structure.
+
+Video below:
 
 
-https://github.com/hfakoor222/Palo_Alto_Scripting/assets/105625129/f582cc49-3e04-4e09-89b5-a31136c54e9e
+https://github.com/hfakoor222/Palo_Alto_Scripting/assets/105625129/f582cc49-3e04-4e09-89b5-a31136c54e9e  
+
+  
 
 the code for this is found in the /compare_Object_ACL's folder
 in my repo.    
