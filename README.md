@@ -11,19 +11,20 @@ We use a XML API (natively built in to Panorama) call to obtain the configuratio
 
 The script uses ElementTree for nested matches - in other words it won't return differences just because they exist over everything , it returns them when they belong to the same groups within the XML tree: Example:
 
-deny 172.16.1.0/24 to any
-and
-deny 172.16.0/23 to any
+deny 172.16.1.0/24 to any  
+and  
+deny 172.16.0/23 to any  
+
 
 returns a match as the subnet configurations are different and they are in the same XML grouping.
 
-deny any to any
-and
+deny any to any  
+and  
 deny 0.0.0.0/32 to any
 
-does not return a misconfiguration macth because it isn't part of the same XML grouping.
+does not return a misconfiguration match because it isn't part of the same XML grouping.
 
-The SML grouping is built into the PA firewalls, and can be viewed through Panorama
+The XML grouping is built into the PA firewalls, and can be viewed through Panorama
 
 the code for this is found in the /compare_Object_ACL's folder
 in my repo (above).    
