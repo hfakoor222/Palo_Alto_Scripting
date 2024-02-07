@@ -26,8 +26,8 @@ does not return a misconfiguration match because it isn't part of the same XML g
 
 The XML grouping is built into the PA firewalls, and can be viewed through Panorama
 
-the code for this is found in the /compare_Object_ACL's folder
-in my repo (above).    
+**the code for this is found in the /compare_Object_ACL's folder
+in my repo (above).**    
 
 
 Video below:
