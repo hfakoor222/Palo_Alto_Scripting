@@ -13,7 +13,7 @@ The script uses ElementTree for nested matches - in other words it won't return 
 
 deny 172.16.1.0/24 to any  
 and  
-deny 172.16.0/23 to any  
+deny 172.16.1.0/23 to any  
 
 
 returns a match as the subnet configurations are different and they are in the same XML grouping.
