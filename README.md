@@ -59,11 +59,11 @@ Video below:
 https://github.com/hfakoor222/Palo_Alto_Scripting/assets/105625129/f582cc49-3e04-4e09-89b5-a31136c54e9e  
 
 
-
+<br/>
   
 
 
-  Code lacated: main.py, ConnectionHandler.py, and /compare_Object_ACL's  Folder
+  Code located at: main.py, ConnectionHandler.py, and /compare_Object_ACL's  Folder
 
 
 <br/>
