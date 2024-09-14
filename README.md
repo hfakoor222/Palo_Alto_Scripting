@@ -26,18 +26,9 @@ deny 0.0.0.0/32 to any
 does not return a misconfiguration match because it isn't part of the same XML grouping. The code can be modified to return this as a match.
 We can audit all our firewalls, to see if there are mismatched security policies.
 
+ 
+
   XML grouping example (this comes straight from the firewall):
-     <Element 'to' at 0x000002A06CE379C0>
-                    <Element 'from' at 0x000002A06CE37A60>
-                    <Element 'source' at 0x000002A06CE37B00>
-                    <Element 'destination' at 0x000002A06CE37C40>
-                    <Element 'application' at 0x000002A06CE37E20>
-                    <Element 'service' at 0x000002A06CE37EC0>
-                    <Element 'source-hip' at 0x000002A06CE37FB0>
-                    <Element 'destination-hip' at 0x000002A06CE40090>
-                    <Element 'action' at 0x000002A06CE40130>
-
-
 ```xml
 <Element 'to' at 0x000002A06CE379C0>
 <Element 'from' at 0x000002A06CE37A60>
