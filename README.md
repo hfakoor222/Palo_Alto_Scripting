@@ -29,7 +29,8 @@ We can audit all our firewalls, to see if there are mismatched security policies
  
 
   XML grouping example (this comes straight from the firewall):
-```xml
+```  XML grouping example (this comes straight from the firewall):
+xml
 <Element 'to' at 0x000002A06CE379C0>
 <Element 'from' at 0x000002A06CE37A60>
 <Element 'source' at 0x000002A06CE37B00>
