@@ -25,7 +25,7 @@ deny 0.0.0.0/32 to any
 
 does not return a misconfiguration match because it isn't part of the same XML grouping. The code can be modified to return this as a match.
 We can audit all our firewalls, to see if there are mismatched security policies.
-<p align="center">
+</br>
   XML grouping example (this comes straight from the firewall):
      <Element 'to' at 0x000002A06CE379C0>
                     <Element 'from' at 0x000002A06CE37A60>
@@ -36,7 +36,8 @@ We can audit all our firewalls, to see if there are mismatched security policies
                     <Element 'source-hip' at 0x000002A06CE37FB0>
                     <Element 'destination-hip' at 0x000002A06CE40090>
                     <Element 'action' at 0x000002A06CE40130>
-</p>                    
+
+</br>
 
 Script only requires port 22 SSH to function, using the netmiko library. It connects to devices in parallel (typically about 4 to 7 devices at once on a 4 core cpu) .
 
