@@ -101,6 +101,7 @@ def compare_object_groups(file1_root, file2_root):
                     group2_placeholder.append(y.text)
             global file1_ip, file2_ip
             #here we find the differences in existing tags of an object group: this can be individual ip addresses or ip address objects
+            #the code immediately below recurses through each data structure, checking each element
             group1_difference = [i for i in group1_placeholder if i not in group2_placeholder]
             group2_difference = [i for i in group2_placeholder if i not in group1_placeholder]
             object_group_differences[file1_ip] = group1_difference if group1_difference else object_group_differences
