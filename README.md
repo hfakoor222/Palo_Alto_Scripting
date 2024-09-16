@@ -1,5 +1,5 @@
 
-**/compare_Object_ACL's**  Folder
+
 
 Firewall policies contain object groups, hundreds of ip addresses and ACL's, services, address objects etc.  This script compares a set of firewall policies, across many firewalls,  and return differences in services, objects, ACL's (source/destination respectively)  to a Python dictionary.  
 
@@ -78,7 +78,7 @@ The XML grouping is built into the PA firewalls, and can be viewed through Panor
 Or we use authentication cookie RestAPI call when connecting from outside the network.
 
 **the code for this is found in the /compare_Object_ACL's folder
-in my repo (above).**    
+(see above).**    
 
 
 Video below:
