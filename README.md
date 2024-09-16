@@ -46,7 +46,10 @@ xml
 The script drills down into the XML grouping of the data structures of the firewall and returns a report of mismatched policies or configurations.
 
 
-For example notice in below the script will return services that exist in one Firewall and not the other. But it will also return services that exist in both firewalls but configured configured differently. If http exists in one firewall and not other we return difference. If http exists in both but configuration is different we return difference.
+For example notice in below the script will return services that exist in one Firewall and not the other. But it will also return services that exist in both firewalls but configured differently. If http exists in one firewall and not other we return difference. 
+
+If http exists in both but ports are different we return difference. 
+
 ```xml
 <entry name="Developer_To_WebServer" uuid="23ed0110-084e-44e8-9ed5-88fac9d64d45">
             <to>
