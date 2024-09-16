@@ -43,6 +43,7 @@ xml
 <Element 'action' at 0x000002A06CE40130>
 ```
 
+The script drills down into the XML grouping of the data structures of the firewall and returns a report of mismatched policies or configurations.
 
 Script only requires port 22 SSH to function, using the netmiko library. It connects to devices in parallel (typically about 4 to 7 devices at once on a 4 core cpu) .
 
