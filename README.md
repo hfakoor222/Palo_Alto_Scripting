@@ -46,14 +46,17 @@ xml
 The script drills down into the XML grouping of the data structures of the firewall and returns a report of mismatched policies or configurations.
 
 
-```<entry name="Developer_To_WebServer" uuid="23ed0110-084e-44e8-9ed5-88fac9d64d45">
+<myxml>
+<entry name="Developer_To_WebServer" uuid="23ed0110-084e-44e8-9ed5-88fac9d64d45">
             <to>
             <member>any</member>
             ...[truncated]
             <service>
                 <member>service-http</member>
                 <member>service-https</member>
-            </service> ```
+            </service>
+            </to>
+</myxml>
 
 
 For example notice in above the script will return services that exist in one Firewall and not the other. But it will also return services that exist in both firewalls but configured configured differently. The report returns the configuration and service difference.
