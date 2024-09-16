@@ -1,3 +1,5 @@
+##This code scrapes the device data structures
+
 import requests
 from requests.auth import HTTPBasicAuth
 import xml.etree.ElementTree as ET
