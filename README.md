@@ -46,7 +46,7 @@ xml
 The script drills down into the XML grouping of the data structures of the firewall and returns a report of mismatched policies or configurations.
 
 
-For example notice in below the script will return services that exist in one Firewall and not the other. But it will also return services that exist in both firewalls but configured configured differently. If http exists in one firewall and not other we return difference. If http exists in both but configuration in sdifferent different we return difference.
+For example notice in below the script will return services that exist in one Firewall and not the other. But it will also return services that exist in both firewalls but configured configured differently. If http exists in one firewall and not other we return difference. If http exists in both but configuration is different we return difference.
 ```xml
 <entry name="Developer_To_WebServer" uuid="23ed0110-084e-44e8-9ed5-88fac9d64d45">
             <to>
@@ -64,9 +64,13 @@ For example notice in below the script will return services that exist in one Fi
 
 
 
-Script only requires port 22 SSH to function, using the netmiko library. It connects to devices in parallel (typically about 4 to 7 devices at once on a 4 core cpu) .
+Script only requires port 22 SSH to function, using the netmiko library. It connects to devices in parallel (typically about 4 to 7 devices at once on a 4 core cpu), as it is multithreaded .
 
-The XML grouping is built into the PA firewalls, and can be viewed through Panorama
+The XML grouping is built into the PA firewalls, and can be viewed through Panorama. We use scalable XML API call when connecting within the network:
+   # standard api link for all firewalls - I use xml path in place of restapi, so we don't have to do OAuth token calls
+        api_url = f'http://{fw_ip}/api/?type=config&action=get&xpath=/config/devices/entry[@name=\'localhost.localdomain\']/vsys/entry[@name=\'vsys1\']'
+
+Or we use authentication cookie API call when connecting from outside the network.
 
 **the code for this is found in the /compare_Object_ACL's folder
 in my repo (above).**    
