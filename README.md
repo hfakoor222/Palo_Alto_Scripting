@@ -24,7 +24,6 @@ deny 0.0.0.0/32 to any
 
 
 does not return a misconfiguration match because it isn't part of the same XML grouping. The code can be modified to return this as a match.
-We can audit all our firewalls, to see if there are mismatched security policies.
 
  
 
