@@ -1,3 +1,4 @@
+##This code recurses through the XML data structures and does comparisons
 import os
 import xml.etree.ElementTree as ET
 import re
