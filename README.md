@@ -70,7 +70,7 @@ If http exists in both but ports are different we return difference.
 Script only requires port 22 SSH to function, using the netmiko library. It connects to devices in parallel (typically about 4 to 7 devices at once on a 4 core cpu), as it is multithreaded .
 
 The XML grouping is built into the PA firewalls, and can be viewed through Panorama. We use scalable XML API call when connecting within the network:
-   # standard api link for all firewalls - I use xml path in place of restapi, so we don't have to do OAuth token calls
+    standard api link for all firewalls - I use xml path in place of restapi, so we don't have to do OAuth token calls
         api_url = f'http://{fw_ip}/api/?type=config&action=get&xpath=/config/devices/entry[@name=\'localhost.localdomain\']/vsys/entry[@name=\'vsys1\']'
 
 Or we use authentication cookie API call when connecting from outside the network.
