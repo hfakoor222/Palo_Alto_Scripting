@@ -71,11 +71,11 @@ Script only requires port 22 SSH to function, using the netmiko library. It conn
 
 The XML grouping is built into the PA firewalls, and can be viewed through Panorama. We use scalable XML API call when connecting within the network:
 
-    #standard api link for all firewalls - I use xml path in place of restapi, so we don't have to do OAuth token calls
+  standard api link for all firewalls - I use xml path in place of restapi, so we don't have to do OAuth token calls
     
-        api_url = f'http://{fw_ip}/api/?type=config&action=get&xpath=/config/devices/entry[@name=\'localhost.localdomain\']/vsys/entry[@name=\'vsys1\']'
+        #api_url = f'http://{fw_ip}/api/?type=config&action=get&xpath=/config/devices/entry[@name=\'localhost.localdomain\']/vsys/entry[@name=\'vsys1\']'
 
-Or we use authentication cookie API call when connecting from outside the network.
+Or we use authentication cookie RestAPI call when connecting from outside the network.
 
 **the code for this is found in the /compare_Object_ACL's folder
 in my repo (above).**    
