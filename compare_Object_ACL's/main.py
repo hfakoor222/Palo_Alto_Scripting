@@ -1,3 +1,5 @@
+##This executes the script. We type in Python3 main.py  in our command line on Windows or Linux
+
 import json
 import re
 import netmiko
