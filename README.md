@@ -26,7 +26,7 @@ deny 0.0.0.0/32 to any
 does not return a misconfiguration match because it isn't part of the same XML grouping. The code can be modified to return this as a match.
 
  
-
+The script drills down into the XML grouping of the data structures of the firewall and returns a report of mismatched policies or configurations.
   
 
 _XML grouping example (this comes straight from the firewall):_
@@ -43,7 +43,7 @@ xml
 <Element 'action' at 0x000002A06CE40130>
 ```
 
-The script drills down into the XML grouping of the data structures of the firewall and returns a report of mismatched policies or configurations.
+
 
 
 For example notice in below the script will return services that exist in one Firewall and not the other. But it will also return services that exist in both firewalls but configured differently. If service-http (or http) exists in one firewall and not other we return difference. 
