@@ -75,11 +75,12 @@ The XML grouping is built into the PA firewalls, and can be viewed through Panor
     
         #api_url = f'http://{fw_ip}/api/?type=config&action=get&xpath=/config/devices/entry[@name=\'localhost.localdomain\']/vsys/entry[@name=\'vsys1\']'
 
-Or we use authentication cookie RestAPI call when connecting from outside the network.
+Or we use authentication cookie RestAPI call when connecting from outside the network for added security.
 
 **the code for this is found in the /compare_Object_ACL's folder
 (see above).**    
 
+I can write a script of this level in 1-3 days.
 
 Video below:
 
