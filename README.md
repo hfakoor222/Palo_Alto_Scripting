@@ -91,7 +91,10 @@ https://github.com/hfakoor222/Palo_Alto_Scripting/assets/105625129/f582cc49-3e04
 <br/>
   
 
-My PalotAlto script was nominated on the PaloAlto developers forum.https://live.paloaltonetworks.com/t5/general-articles/nominated-discussion-script-that-returns-the-differences-in/ta-p/562409
+My PalotAlto script was nominated on the PaloAlto developers forum.https://live.paloaltonetworks.com/t5/general-articles/nominated-discussion-script-that-returns-the-differences-in/ta-p/562409<br/>
+
+
+
   Code located at: main.py, ConnectionHandler.py, and /compare_Object_ACL's  Folder
 
 
