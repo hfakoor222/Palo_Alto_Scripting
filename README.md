@@ -95,8 +95,7 @@ My PalotAlto script was nominated on the PaloAlto developers forum.<br/>
 https://live.paloaltonetworks.com/t5/general-articles/nominated-discussion-script-that-returns-the-differences-in/ta-p/562409<br/>
 
 
-**
-  Code located at:  /compare_Object_ACL's  Folder**
+**Code located at:  /compare_Object_ACL's  Folder**
 
 
 <br/>
