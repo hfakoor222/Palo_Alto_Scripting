@@ -1,4 +1,5 @@
 ##This code recurses through the XML data structures and does comparisons
+
 import os
 import xml.etree.ElementTree as ET
 import re
@@ -29,6 +30,7 @@ def compare_policies(file1_root, file2_root):
         #the below code we loop through each child tag of both elements  1 level deep, and append them to a list.
         #If the child tags of both lists have the same tag.text value we compare the member values.
         #If member values are not the same length or value, we know the policies aren't the same
+        
         """here is an example of the XML:
         <entry name="Developer_To_WebServer" uuid="23ed0110-084e-44e8-9ed5-88fac9d64d45">
             <to>
@@ -46,6 +48,7 @@ def compare_policies(file1_root, file2_root):
         notice service tag is 1 level deep. If tags match across lists we comare the lengths and the tags remaining
         inside service tag"""
 
+        
         for sub_elem1 in elem1:
             for tag in sub_elem1:
                 elem1_attributes.append(tag)
