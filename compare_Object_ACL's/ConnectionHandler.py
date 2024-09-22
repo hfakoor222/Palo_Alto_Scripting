@@ -1,3 +1,5 @@
+## This is a simple connection API. normally we would have an encrypted list of firewalls with username/password to use.
+
 
 import json
 import netmiko
