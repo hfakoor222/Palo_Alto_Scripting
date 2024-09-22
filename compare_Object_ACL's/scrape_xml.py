@@ -1,4 +1,4 @@
-##This code scrapes the device data structures
+##This code scrapes the device data structures. This is a simple scraper that returns the XML.
 
 import requests
 from requests.auth import HTTPBasicAuth
